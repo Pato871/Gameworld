@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#090914">
 
-    <title>GAMEWORLD | Tu universo gamer</title>
+    <title>GAMEWORLD | Gaming Portal</title>
 
     <meta name="description"
-          content="GAMEWORLD, tu portal para descubrir y disfrutar juegos online.">
+          content="GAMEWORLD - Tu universo de videojuegos online.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVEGACIÓN -->
     <header class="navbar">
         <a href="#inicio" class="logo">
             GAME<span>WORLD</span>
@@ -28,16 +27,12 @@
             <a href="#acerca">Acerca de</a>
         </nav>
 
-        <a class="nav-button"
-           href="https://sites.google.com/view/classroom6x/"
-           target="_blank"
-           rel="noopener noreferrer">
-            ENTRAR A JUGAR ↗
+        <a href="#juegos" class="nav-button">
+            JUGAR AHORA
         </a>
     </header>
 
 
-    <!-- PORTADA -->
     <main>
 
         <section class="hero" id="inicio">
@@ -54,20 +49,13 @@
                 </h1>
 
                 <p>
-                    Explora una colección de videojuegos online.
-                    Entra, descubre tus favoritos y disfruta de
-                    tu propio universo gamer.
+                    Descubre más de 20 videojuegos,
+                    explora nuevos mundos y disfruta
+                    de tu universo gamer.
                 </p>
 
                 <a href="#juegos" class="main-button">
                     EXPLORAR JUEGOS →
-                </a>
-
-                <a class="hero-secondary"
-                   href="https://sites.google.com/view/classroom6x/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Abrir Classroom 6x ↗
                 </a>
 
             </div>
@@ -81,133 +69,131 @@
         </section>
 
 
-        <!-- INFORMACIÓN -->
         <section class="features">
 
             <div class="feature">
                 <span>🕹️</span>
-                <h3>JUEGOS ONLINE</h3>
-                <p>Accede desde tu navegador.</p>
+                <h3>20 VIDEOJUEGOS</h3>
+                <p>Una biblioteca gamer para explorar.</p>
             </div>
 
             <div class="feature">
                 <span>⚡</span>
-                <h3>ACCESO RÁPIDO</h3>
-                <p>Entra y comienza a jugar.</p>
+                <h3>JUEGA ONLINE</h3>
+                <p>Juega desde tu navegador.</p>
             </div>
 
             <div class="feature">
-                <span>🌎</span>
-                <h3>UNIVERSO GAMER</h3>
-                <p>Tu espacio de entretenimiento.</p>
+                <span>🖥️</span>
+                <h3>PANTALLA COMPLETA</h3>
+                <p>Disfruta cada juego a lo grande.</p>
             </div>
 
         </section>
 
 
-        <!-- BIBLIOTECA DE JUEGOS -->
         <section class="games-section" id="juegos">
 
             <div class="section-heading">
 
                 <div>
-                    <span class="tag">NUESTRA BIBLIOTECA</span>
+                    <span class="tag">GAME LIBRARY</span>
 
                     <h2>
-                        ENTER THE <span>GAMEWORLD</span>
+                        EXPLORE THE <span>GAMES</span>
                     </h2>
 
                     <p class="section-description">
-                        Los juegos se cargan desde Classroom 6x.
+                        Encuentra tu próximo videojuego favorito.
                     </p>
                 </div>
 
-                <a class="external-link"
-                   href="https://sites.google.com/view/classroom6x/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    ABRIR EN OTRA PESTAÑA ↗
-                </a>
+                <div class="game-count">
+                    <strong>20</strong>
+                    <span>JUEGOS DISPONIBLES</span>
+                </div>
 
             </div>
 
 
-            <!-- REPRODUCTOR EXTERNO -->
-            <div class="external-player" id="externalPlayer">
+            <div class="game-tools">
 
-                <div class="player-toolbar">
+                <input
+                    type="search"
+                    id="gameSearch"
+                    placeholder="🔍 Buscar un videojuego..."
+                    autocomplete="off"
+                >
 
-                    <div class="player-brand">
-                        <span class="player-icon">🎮</span>
+                <div class="categories">
 
-                        <div>
-                            <strong>GAMEWORLD</strong>
-                            <small>POWERED BY CLASSROOM 6X</small>
-                        </div>
-                    </div>
+                    <button class="category active" data-filter="todos">
+                        Todos
+                    </button>
 
-                    <button
-                        type="button"
-                        id="fullscreenButton"
-                        class="fullscreen-button">
+                    <button class="category" data-filter="carreras">
+                        Carreras
+                    </button>
 
-                        ⛶ PANTALLA COMPLETA
+                    <button class="category" data-filter="accion">
+                        Acción
+                    </button>
 
+                    <button class="category" data-filter="deportes">
+                        Deportes
+                    </button>
+
+                    <button class="category" data-filter="plataformas">
+                        Plataformas
+                    </button>
+
+                    <button class="category" data-filter="puzzle">
+                        Puzzle
+                    </button>
+
+                    <button class="category" data-filter="arcade">
+                        Arcade
+                    </button>
+
+                    <button class="category" data-filter="multiplayer">
+                        Multijugador
                     </button>
 
                 </div>
 
-
-                <div class="frame-container">
-
-                    <iframe
-                        id="gamesFrame"
-                        src="https://sites.google.com/view/classroom6x/"
-                        title="Biblioteca de juegos Classroom 6x"
-                        allow="fullscreen; autoplay; gamepad"
-                        allowfullscreen
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin">
-
-                    </iframe>
-
-                </div>
-
             </div>
 
 
-            <div class="player-message">
+            <div class="game-grid" id="gameGrid">
 
-                <span>💡</span>
-
-                <p>
-                    ¿No aparecen los juegos en el reproductor?
-                    Abre Classroom 6x directamente desde el botón
-                    de arriba. Algunas páginas externas no permiten
-                    mostrarse dentro de otros sitios web.
-                </p>
+                <!-- LOS JUEGOS SE GENERAN DESDE script.js -->
 
             </div>
+
+            <p class="empty-message" id="emptyMessage">
+                No encontramos juegos con ese nombre. 🎮
+            </p>
 
         </section>
 
 
-        <!-- ACERCA -->
         <section class="about-section" id="acerca">
 
-            <span class="tag">WELCOME GAMER</span>
+            <span class="tag">
+                WELCOME GAMER
+            </span>
 
             <h2>
                 THE GAME <span>STARTS HERE.</span>
             </h2>
 
             <p>
-                GAMEWORLD es tu portal para acceder a videojuegos
-                online y descubrir nuevas experiencias.
+                GAMEWORLD reúne juegos de navegador
+                de diferentes categorías en una sola plataforma.
             </p>
 
             <a href="#juegos" class="main-button">
-                ENTRAR AL UNIVERSO GAMER →
+                DESCUBRIR JUEGOS →
             </a>
 
         </section>
@@ -215,7 +201,65 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- VENTANA DEL JUEGO -->
+
+    <div class="game-modal" id="gameModal" aria-hidden="true">
+
+        <div class="game-window" id="gameWindow">
+
+            <div class="game-toolbar">
+
+                <div class="playing-title">
+                    <span>🎮</span>
+                    <strong id="gameTitle">GAMEWORLD</strong>
+                </div>
+
+                <div class="player-actions">
+
+                    <a
+                        href="#"
+                        id="openExternal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="open-external">
+                        ABRIR EN OTRA PESTAÑA ↗
+                    </a>
+
+                    <button id="fullscreenButton">
+                        ⛶ PANTALLA COMPLETA
+                    </button>
+
+                    <button
+                        id="closeGame"
+                        class="close-game"
+                        aria-label="Cerrar juego">
+                        ✕
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-screen">
+
+                <iframe
+                    id="gameFrame"
+                    src="about:blank"
+                    title="Videojuego GAMEWORLD"
+                    allow="autoplay; fullscreen; gamepad; picture-in-picture"
+                    allowfullscreen
+                    loading="eager"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     <footer>
 
         <a href="#inicio" class="logo">
@@ -226,11 +270,7 @@
             © 2026 GAMEWORLD. TODOS LOS DERECHOS RESERVADOS.
         </p>
 
-        <a href="https://sites.google.com/view/classroom6x/"
-           target="_blank"
-           rel="noopener noreferrer">
-            CLASSROOM 6X ↗
-        </a>
+        <span>POWERED BY GAMERS 🎮</span>
 
     </footer>
 
