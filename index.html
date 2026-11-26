@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090914">
+    <title>GAMEWORLD | Tu mundo de juegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">GAME<span>WORLD</span></a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Juegos</a>
+            <a href="#categorias">Categorías</a>
+        </nav>
+
+        <a href="#juegos" class="nav-button">JUGAR AHORA</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="tag">🎮 TU NUEVO UNIVERSO GAMER</span>
+
+                <h1>YOUR WORLD.<br>
+                    <span>YOUR GAMES.</span>
+                </h1>
+
+                <p>
+                    Descubre, explora y juega. 
+                    Todos tus videojuegos favoritos en un solo lugar.
+                </p>
+
+                <a href="#juegos" class="main-button">EXPLORAR JUEGOS →</a>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="controller">🎮</div>
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div><strong>∞</strong><span>DIVERSIÓN</span></div>
+            <div><strong>24/7</strong><span>DISPONIBLE</span></div>
+            <div><strong>100%</strong><span>GAMER</span></div>
+        </section>
+
+        <section class="games-section" id="juegos">
+            <div class="section-heading">
+                <div>
+                    <span class="tag">NUESTRA BIBLIOTECA</span>
+                    <h2>EXPLORA LOS <span>JUEGOS</span></h2>
+                </div>
+                <input type="text" id="gameSearch"
+                    placeholder="🔍 Buscar juegos...">
+            </div>
+
+            <div class="categories" id="categorias">
+                <button class="category active" data-category="todos">Todos</button>
+                <button class="category" data-category="arcade">Arcade</button>
+                <button class="category" data-category="accion">Acción</button>
+                <button class="category" data-category="estrategia">Estrategia</button>
+                <button class="category" data-category="deportes">Deportes</button>
+            </div>
+
+            <div class="game-grid" id="gameGrid">
+
+                <article class="game-card" data-category="arcade">
+                    <div class="game-image snake">🐍</div>
+                    <div class="game-info">
+                        <span>ARCADE</span>
+                        <h3>Snake</h3>
+                        <p>¡Come, crece y consigue el récord!</p>
+                        <button class="play-button" data-game="snake">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="estrategia">
+                    <div class="game-image memory">🧠</div>
+                    <div class="game-info">
+                        <span>ESTRATEGIA</span>
+                        <h3>Memory</h3>
+                        <p>Pon a prueba tu memoria.</p>
+                        <button class="play-button" data-game="memory">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="arcade">
+                    <div class="game-image tictactoe">⭕</div>
+                    <div class="game-info">
+                        <span>ARCADE</span>
+                        <h3>Tres en raya</h3>
+                        <p>Desafía a tus amigos.</p>
+                        <button class="play-button" data-game="tictactoe">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="accion">
+                    <div class="game-image reaction">⚡</div>
+                    <div class="game-info">
+                        <span>ACCIÓN</span>
+                        <h3>Reflejos</h3>
+                        <p>¿Qué tan rápidos son tus reflejos?</p>
+                        <button class="play-button" data-game="reaction">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="deportes">
+                    <div class="game-image soccer">⚽</div>
+                    <div class="game-info">
+                        <span>DEPORTES</span>
+                        <h3>Fútbol</h3>
+                        <p>Demuestra tu puntería.</p>
+                        <button class="play-button" data-game="soccer">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="arcade">
+                    <div class="game-image puzzle">🧩</div>
+                    <div class="game-info">
+                        <span>ARCADE</span>
+                        <h3>Puzzle</h3>
+                        <p>Resuelve retos y supera niveles.</p>
+                        <button class="play-button" data-game="puzzle">JUGAR AHORA →</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="join-section">
+            <span>¿ESTÁS LISTO?</span>
+            <h2>EL JUEGO <span>COMIENZA AQUÍ.</span></h2>
+            <a href="#juegos" class="main-button">ENTRAR AL UNIVERSO GAMER</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">GAME<span>WORLD</span></a>
+        <p>© 2026 GAMEWORLD. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p>POWERED BY GAMERS 🎮</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
